@@ -6,6 +6,7 @@ License:        GPL-2.0+
 Group:          System/Base
 Summary:        DMI table decoder
 Source:         %{name}-%{version}.tar.bz2
+Source1001: 	dmidecode.manifest
 ExclusiveArch:  %ix86 x86_64
 
 %description
@@ -24,6 +25,7 @@ the BIOS told it to.
 
 %prep
 %setup
+cp %{SOURCE1001} .
 
 %build
 make CFLAGS="$RPM_OPT_FLAGS" %{?_smp_mflags}
@@ -38,6 +40,7 @@ install -m 644 man/$i.8 %{buildroot}%{_mandir}/man8/
 done
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %license LICENSE
 /usr/sbin/*
