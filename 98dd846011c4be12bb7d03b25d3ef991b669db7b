@@ -1,0 +1,8 @@
+Change-Id: I98dd846011c4be12bb7d03b25d3ef991b669db7b
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:40:42 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4749
+Project: platform/upstream/dmidecode
+Branch: refs/heads/tizen
